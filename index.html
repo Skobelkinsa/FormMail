@@ -5,24 +5,36 @@
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script type="text/javascript" src="/res/js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="/res/js/forma.js"></script>
+	<link rel="stylesheet" href="/css/style.css">
+	// add skin default
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<!-- Обычная форма отправки -->
-	<form method="POST" class="contact-form" action="/mail.php">
-		<input type="text" name="name" placeholder="Имя" value="">
-		<input type="text" name="phone" placeholder="Телефон" value="">
-		<input type="text" name="mail" placeholder="E-mail" value="">
-		<textarea rows="10" cols="45" name="text" placeholder="Детали заявки"></textarea>
-		<button type="submit">Отправить</button>
-	</form>
-	<!-- Форма отправки с файлом -->
-	<form  method="POST" class="contact-form-file" action="/mail.php" enctype="multipart/form-data">
-		<input type="text" placeholder="Ваше имя" name="name" value="">
-		<input type="text" placeholder="E-mail" name="mail" value="">
-		<input type="text" placeholder="Телефон" name="phone" value="">
-		<textarea rows="10" cols="45" name="text" placeholder="Детали заявки"></textarea>
-		<input type="file" name="my_file" value="">
-		<button type="submit">Отправить</button>	
-	</form>
+	<div class="col-md-12">
+		<div class="row">
+			<div class="col-md-6">
+				<!-- Обычная форма отправки -->
+				<form method="POST" class="contact-form" action="/mail.php">
+					<input type="text" name="name" placeholder="Имя" value="">
+					<input type="text" name="phone" placeholder="Телефон" value="">
+					<input type="text" name="mail" placeholder="E-mail" value="">
+					<textarea rows="10" cols="45" name="text" placeholder="Детали заявки"></textarea>
+					<button type="submit">Отправить</button>
+				</form>
+			</div>
+			<div class="col-md-6">
+				<!-- Форма отправки с файлом -->
+				<form  method="POST" class="contact-form-file" action="/mail.php" enctype="multipart/form-data">
+					<input type="text" placeholder="Ваше имя" name="name" value="">
+					<input type="text" placeholder="E-mail" name="mail" value="">
+					<input type="text" placeholder="Телефон" name="phone" value="">
+					<textarea rows="10" cols="45" name="text" placeholder="Детали заявки"></textarea>
+					<input type="file" name="my_file" value="">
+					<button type="submit">Отправить</button>	
+				</form>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
